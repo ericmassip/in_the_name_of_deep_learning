@@ -7,7 +7,7 @@ from skimage.transform import resize
 # parameters that you should set before running this script
 filter = ['cat', 'dog']       # select class, this default should yield 1489 training and 1470 validation images
 voc_root_folder = "/Users/ericmassip/Projects/MAI/2nd_semester/CV/Project/VOCdevkit/"  # please replace with the location on your laptop where you unpacked the tarball
-image_size = 128    # image size that you will use for your network (input images will be resampled to this size), lower if you have troubles on your laptop (hint: use io.imshow to inspect the quality of the resampled images before feeding it into your network!)
+image_size = 64    # image size that you will use for your network (input images will be resampled to this size), lower if you have troubles on your laptop (hint: use io.imshow to inspect the quality of the resampled images before feeding it into your network!)
 
 
 # step1 - build list of filtered filenames
