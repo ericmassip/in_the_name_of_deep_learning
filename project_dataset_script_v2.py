@@ -5,9 +5,9 @@ from skimage import io
 from skimage.transform import resize
 
 # parameters that you should set before running this script
-filter = ['cat', 'dog']       # select class, this default should yield 1489 training and 1470 validation images
+filter = ['cat', 'motorbike', 'bottle']       # select class, this default should yield 1489 training and 1470 validation images
 voc_root_folder = "/Users/ericmassip/Projects/MAI/2nd_semester/CV/Project/VOCdevkit/"  # please replace with the location on your laptop where you unpacked the tarball
-image_size = 64    # image size that you will use for your network (input images will be resampled to this size), lower if you have troubles on your laptop (hint: use io.imshow to inspect the quality of the resampled images before feeding it into your network!)
+image_size = 128    # image size that you will use for your network (input images will be resampled to this size), lower if you have troubles on your laptop (hint: use io.imshow to inspect the quality of the resampled images before feeding it into your network!)
 
 
 # step1 - build list of filtered filenames
@@ -61,6 +61,3 @@ print('%i training images from %i classes' %(x_train.shape[0], y_train.shape[1])
 x_val, y_val = build_classification_dataset(val_files)
 print('%i validation images from %i classes' %(x_val.shape[0],  y_train.shape[1]))
 
-# from here, you can start building your model
-# you will only need x_train and x_val for the autoencoder
-# you should extend the above script for the segmentation task (you will need a slightly different function for building the label images)
