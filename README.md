@@ -4,11 +4,11 @@ In this project, we analyze the value of Convolutional Neural Networks for two t
 
 In the feature extraction section, we have tested different autoencoder settings with several codification factors such as 6, 12 and 24 achieving a Mean Squared Error of 0.01.
 
-![Feature Extraction] (feature_extraction.png)
+![Feature Extraction](feature_extraction.png)
 
 In image classification, we could demonstrate that the Deep CNN performs widely better than a feature extraction architecture with a fully connected layer. 
 
 In the segmentation section, we obtained a promising pixel-wise classifier with a Dice coefficient value of 0.68.
 
-![Image Segmentation] (image_segmentation.png)
+![Image Segmentation](image_segmentation.png)
 
